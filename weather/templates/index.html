@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="city" placeholder="Enter your city...">
+        <input type="submit" value="Change">
+        <h1>{{data.city}}</h1>
+        <h4>{{data.description}}</h4>
+        <h4>{{data.temp}}</h4>
+        <h4>{{data.feels}}</h4>
+        <h4>{{data.sunrise}}</h4>
+        <h4>{{data.sunset}}</h4>
+
+    </form>
+</body>
+</html>
